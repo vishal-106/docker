@@ -15,7 +15,7 @@ app: web
 spec:
 containers:
 - name: container-nginx
-image: nginx
+image: vishal1992/jenkin:first
 ports:
 - containerport: 8080
 
