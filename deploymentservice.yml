@@ -6,12 +6,12 @@ spec:
 replicas: 2
 selector:
 matchlabels:
-apps: web
+app: web
 template:
 metadata:
 name: nginx
 labels:
-apps: web
+app: web
 spec:
 containers:
 - name: container-nginx
@@ -32,4 +32,4 @@ spec:
     port: 80
     nodePort: 31000
   selector:
-    apps: web
+    app: web
