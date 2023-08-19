@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: de-nginx
+  name: dp-nginx
 spec:
   replicas: 5
   selector:
@@ -23,12 +23,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-kd
+  name: nginx-k
 spec:
   type: NodePort
   ports:
   - targetPort: 80
     port: 80
-    nodePort: 31500
+    nodePort: 31550
   selector:
     app: web
